@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="Module1App">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Hello Module 1</title>
+  </head>
+  <body ng-controller="Module1Controller">
+    <h1>Please enter the items you ate for lunch below, with comma seperating each item:</h1>
+    <input type="text" ng-model="lunchItems">
+    <button ng-click="CheckIfTooMuch()">Check If Too Much</button>
+
+    <br>
+    {{Message}}
+  </body>
+</html>
